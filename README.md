@@ -63,12 +63,14 @@ The host "~/.gitconfig" file is copied to the vagrant box, to carry global prefe
 
 ### Shell
 The following software is installed via shell provisioning. 
+
 * Node (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 * Git
 * Grunt
-* Mongodb (https://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/)
+* Mongodb (https://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/) 
 
-
+Please take on account mongo installation should be secured to be used on a production environment.
+    
     # auto remove, not really necessary, just to clean
     sudo apt-get autoremove -y
     # node and npm
@@ -85,10 +87,4 @@ The following software is installed via shell provisioning.
     echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
     sudo apt-get update
     sudo apt-get install -y mongodb-org
-
-Please take on account mongo installation should be secured to be used on a production environment.
-
-
-
-
 
