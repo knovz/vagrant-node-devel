@@ -1,0 +1,4 @@
+#vagrant vm files
+.vagrant/*
+#folder to place workspace, maybe with other git repos
+workspace/*
