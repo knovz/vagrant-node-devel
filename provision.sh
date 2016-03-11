@@ -8,6 +8,8 @@ sudo apt-get install -y build-essential
 # Git
 sudo apt-get install -y git
 # Use file provision to copy ~/.gitconfig
+#Express generator
+sudo npm install -g express-generator
 # Grunt
 #   Not using grunt
 # sudo npm install -g grunt-cli
