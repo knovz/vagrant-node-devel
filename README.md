@@ -66,25 +66,9 @@ The following software is installed via shell provisioning.
 
 * Node (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 * Git
-* Grunt
 * Mongodb (https://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/) 
+
+See provisioning.sh for details.
 
 Please take on account mongo installation should be secured to be used on a production environment.
     
-    # auto remove, not really necessary, just to clean
-    sudo apt-get autoremove -y
-    # node and npm
-    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    # Build essentials, for some node modules that need to be compiled
-    sudo apt-get install -y build-essential
-    # git
-    sudo apt-get install -y git
-    # grunt
-    sudo npm install -g grunt-cli
-    # MongoDb
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-    echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
-    sudo apt-get update
-    sudo apt-get install -y mongodb-org
-
